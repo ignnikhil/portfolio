@@ -6,8 +6,13 @@ import habitAppImage from "../images/habit_app.png";
 import nowandmeTherapyAppImage from "../images/nowandme_therapy_app.png";
 import Image from "next/image";
 import Head from "next/head";
+import { useEffect, useState } from "react";
 
 const HomePage: NextPage = () => {
+  const [isSafari, setIsSafari] = useState(false);
+  useEffect(() => {
+    setIsSafari(/^((?!chrome|android).)*safari/i.test(navigator.userAgent));
+  }, []);
   return (
     <>
       <Head>
@@ -212,8 +217,17 @@ const HomePage: NextPage = () => {
                         gradientUnits="userSpaceOnUse"
                         gradientTransform="translate(296.5 47.9699) rotate(90) scale(69.3369 382.613)"
                       >
-                        <stop />
-                        <stop offset="1" stopColor="white" stopOpacity="0" />
+                        <stop
+                          stopColor={`rgba(${
+                            isSafari ? "100,100,100,1" : "0,0,0,1"
+                          })`}
+                          stopOpacity="1"
+                        />
+                        <stop
+                          offset="1"
+                          stopColor="rgba(255,255,255,0)"
+                          stopOpacity="0"
+                        />
                       </radialGradient>
                     </defs>
                   </svg>
