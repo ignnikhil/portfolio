@@ -13,9 +13,9 @@ const HomePage: NextPage = () => {
       <Head>
         <title>Nikhil Singh — Product Designer</title>
       </Head>
-      <div className="min-h-screen bg-[#161613] font-sans text-white antialiased">
+      <div className="min-h-screen bg-[#0D0D0B] font-sans text-[#F3F3F3] antialiased">
         <header className="py-16 px-5 fixed w-full z-50">
-          <div className="max-w-7xl mx-auto flex items-center justify-between font-medium">
+          <div className="max-w-6xl mx-auto flex items-center justify-between font-medium">
             <span
               style={{
                 background:
@@ -55,7 +55,7 @@ const HomePage: NextPage = () => {
                 className="absolute inset-0"
                 style={{
                   background:
-                    "linear-gradient(164.1deg, #161613 22.98%, rgba(22, 22, 19, 0.45) 37.59%, rgba(22, 22, 19, 0.44) 50.99%, #161613 66.82%)",
+                    "linear-gradient(164.1deg, #0D0D0B 22.98%, rgba(22, 22, 19, 0.45) 37.59%, rgba(22, 22, 19, 0.44) 50.99%, #0D0D0B 66.82%)",
                 }}
               />
               <svg
@@ -154,7 +154,7 @@ const HomePage: NextPage = () => {
                 </defs>
               </svg>
             </div>
-            <div className="max-w-7xl mx-auto px-20 relative">
+            <div className="max-w-6xl mx-auto px-20 relative">
               <h1 className="font-semibold text-[7.5rem] leading-[1.15] tracking-tighter">
                 <div className="flex items-center gap-4">
                   <div className="mt-4 flex">
@@ -245,7 +245,7 @@ const HomePage: NextPage = () => {
             </div>
           </section>
           <section className="px-5 py-20">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-6xl mx-auto">
               <div>
                 <p className="text-5xl font-medium leading-relaxed">
                   I design products that are built to last
@@ -269,12 +269,16 @@ const HomePage: NextPage = () => {
                 </h4>
                 <div className="grid grid-cols-2 gap-20 mt-8">
                   <div>
-                    <Image src={habitAppImage} alt="Habit Building App" />
-                    <div className="mt-8">
+                    <Image
+                      src={habitAppImage}
+                      alt="Habit Building App"
+                      layout="responsive"
+                    />
+                    <div className="mt-8 font-display">
                       <h5 className="text-xl font-semibold">
                         Habit Building App
                       </h5>
-                      <p className="mt-4 leading-8 text-[#818180]">
+                      <p className="mt-4 text-lg leading-8 text-[#818180]">
                         We helped Sparkasse to enter a new era of online and
                         mobile banking, expanded their app portfolio and
                         improved existing products.
@@ -285,12 +289,13 @@ const HomePage: NextPage = () => {
                     <Image
                       src={nowandmeTherapyAppImage}
                       alt="Now&Me x Therapy"
+                      layout="responsive"
                     />
-                    <div className="mt-8">
+                    <div className="mt-8 font-display">
                       <h5 className="text-xl font-semibold">
                         Now&Me x Therapy
                       </h5>
-                      <p className="mt-4 leading-8 text-[#818180]">
+                      <p className="mt-4 text-lg leading-8 text-[#818180]">
                         We helped Sparkasse to enter a new era of online and
                         mobile banking, expanded their app portfolio and
                         improved existing products.
@@ -302,6 +307,35 @@ const HomePage: NextPage = () => {
             </div>
           </section>
         </main>
+        <footer className="pt-12 pb-80 px-5">
+          <div className="max-w-6xl mx-auto">
+            <p className="text-7xl font-medium leading-tight">
+              Ok <span className="text-[#8567FC] font-semibold">you</span> are
+              here
+              <br />
+              Then why not say
+              <br />
+              <span className="font-semibold text-[#14D87A]">hellooooo 👋</span>
+            </p>
+            <nav className="mt-24 flex items-center justify-between font-medium">
+              <a>Dribbble</a>
+              <a>Behance</a>
+              <a>Instagram</a>
+              <a>Twitter</a>
+              <a>LinkedIn</a>
+              <a>Email</a>
+            </nav>
+            <div className="pt-80">
+              <div className="flex items-center gap-12">
+                <span className="w-full h-[2px] bg-gradient-to-r from-[#CBCBCB6B] to-transparent" />
+                <p className="w-full text-[#DBDBDBCC] font-medium">
+                  Designed while watching Batman vs Superman
+                </p>
+                <span className="w-full h-[2px] bg-gradient-to-l from-[#CBCBCB6B] to-transparent" />
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );

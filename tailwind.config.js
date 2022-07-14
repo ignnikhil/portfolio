@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['General Sans', ...defaultConfig.theme.fontFamily.sans]
+        sans: ['General Sans', ...defaultConfig.theme.fontFamily.sans],
+        display: ['DM Sans', ...defaultConfig.theme.fontFamily.sans]
       }
     },
   },
