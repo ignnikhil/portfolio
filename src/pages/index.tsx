@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import avatarImage from "../images/avatar.png";
 import cresentMoonEmoji from "../images/crescent-moon_emoji.png";
 import videoGameEmoji from "../images/video-game_emoji.png";
+import habitAppImage from "../images/habit_app.png";
+import nowandmeTherapyAppImage from "../images/nowandme_therapy_app.png";
 import Image from "next/image";
 import Head from "next/head";
 
@@ -240,6 +242,63 @@ const HomePage: NextPage = () => {
                   </span>
                 </div>
               </h1>
+            </div>
+          </section>
+          <section className="px-5 py-20">
+            <div className="max-w-7xl mx-auto">
+              <div>
+                <p className="text-5xl font-medium leading-relaxed">
+                  I design products that are built to last
+                  <br /> in a fast-acting world —
+                </p>
+                <p className="text-xl mt-5 font-medium">
+                  Prev at{" "}
+                  <a
+                    href="https://nowandme.com"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="border-b border-current"
+                  >
+                    Now&amp;Me
+                  </a>
+                </p>
+              </div>
+              <div className="mt-20">
+                <h4 className="uppercase text-lg tracking-wide font-medium text-[#646463]">
+                  Explore Case Studies
+                </h4>
+                <div className="grid grid-cols-2 gap-20 mt-8">
+                  <div>
+                    <Image src={habitAppImage} alt="Habit Building App" />
+                    <div className="mt-8">
+                      <h5 className="text-xl font-semibold">
+                        Habit Building App
+                      </h5>
+                      <p className="mt-4 leading-8 text-[#818180]">
+                        We helped Sparkasse to enter a new era of online and
+                        mobile banking, expanded their app portfolio and
+                        improved existing products.
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <Image
+                      src={nowandmeTherapyAppImage}
+                      alt="Now&Me x Therapy"
+                    />
+                    <div className="mt-8">
+                      <h5 className="text-xl font-semibold">
+                        Now&Me x Therapy
+                      </h5>
+                      <p className="mt-4 leading-8 text-[#818180]">
+                        We helped Sparkasse to enter a new era of online and
+                        mobile banking, expanded their app portfolio and
+                        improved existing products.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
         </main>
