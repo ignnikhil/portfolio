@@ -4,6 +4,13 @@ import cresentMoonEmoji from "../images/crescent-moon_emoji.png";
 import videoGameEmoji from "../images/video-game_emoji.png";
 import habitAppImage from "../images/habit_app.png";
 import nowandmeTherapyAppImage from "../images/nowandme_therapy_app.png";
+import nowandmeStatusFeatImage from "../images/feat_nowandme_status.png";
+import nowandmeFriendFeatImage from "../images/feat_nowandme_friend.png";
+import nowandmeTherapyFeatImage from "../images/feat_nowandme_therapy.png";
+import nowandmeOnlineFeatImage from "../images/feat_nowandme_online.png";
+import nowandmeConnectionsFeatImage from "../images/feat_nowandme_connnections.png";
+import nowandmeNotificationsFeatImage from "../images/feat_nowandme_notifications.png";
+
 import Image from "next/image";
 import Head from "next/head";
 import { useEffect, useState } from "react";
@@ -316,10 +323,55 @@ const HomePage: NextPage = () => {
                       </p>
                     </div>
                   </div>
+                  <div className="col-span-2">
+                    <div className="bg-[#1818189C] h-96">
+                      {/* placeholder */}
+                    </div>
+                    <div className="grid grid-cols-2 gap-20 mt-4 font-display">
+                      <h5 className="text-xl font-semibold">
+                        Now&amp;Me x Quiz
+                      </h5>
+                      <p className="text-lg leading-8 text-[#818180]">
+                        We helped Sparkasse to enter a new era of online and
+                        mobile banking, expanded their app portfolio and
+                        improved existing products.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
+          <div className="px-5 py-20">
+            <div className="max-w-6xl mx-auto">
+              <h4 className="uppercase text-lg tracking-wide font-medium text-[#646463]">
+                Fun Work
+              </h4>
+              <div className="grid grid-cols-2 gap-8 mt-8">
+                <div className="col-span-2">
+                  <Image
+                    src={nowandmeStatusFeatImage}
+                    alt="Now&Me status feature"
+                  />
+                </div>
+                <div>
+                  <Image src={nowandmeFriendFeatImage} />
+                </div>
+                <div>
+                  <Image src={nowandmeTherapyFeatImage} />
+                </div>
+                <div className="col-span-2">
+                  <Image src={nowandmeOnlineFeatImage} />
+                </div>
+                <div>
+                  <Image src={nowandmeConnectionsFeatImage} />
+                </div>
+                <div>
+                  <Image src={nowandmeNotificationsFeatImage} />
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
         <footer className="pt-12 pb-80 px-5">
           <div className="max-w-6xl mx-auto">
@@ -339,7 +391,7 @@ const HomePage: NextPage = () => {
               <a>LinkedIn</a>
               <a>Email</a>
             </nav>
-            <div className="pt-80">
+            <div className="pt-40">
               <div className="flex items-center gap-12">
                 <span className="w-full h-[2px] bg-gradient-to-r from-[#CBCBCB6B] to-transparent" />
                 <p className="w-full text-[#DBDBDBCC] font-medium">
