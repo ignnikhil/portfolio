@@ -2,6 +2,7 @@ import NextLink from "next/link"
 import { useRouter } from "next/router"
 import { ReactNode } from "react"
 import useScrollPosition from "../../hooks/useScrollPosition"
+import Router from "next/router"
 
 const Header: React.FC = () => {
   const scrollY = useScrollPosition()
@@ -13,19 +14,17 @@ const Header: React.FC = () => {
     >
       <div className="flex items-center justify-between max-w-6xl mx-auto font-medium">
         <Link href="/">
-          <a>
-            <span
-              style={{
-                background:
-                  "linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 100%)",
-                color: "transparent",
-                backgroundClip: "text",
-                WebkitBackgroundClip: "text",
-              }}
-            >
-              Nikhil Singh.
-            </span>
-          </a>
+          <span
+            style={{
+              background:
+                "linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 100%)",
+              color: "transparent",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+            }}
+          >
+            Nikhil Singh.
+          </span>
         </Link>
         <nav className="flex gap-8">
           <Link href="/">Work</Link>
