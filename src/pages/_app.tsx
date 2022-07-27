@@ -1,25 +1,27 @@
-import "../styles/globals.css";
-import type { AppProps } from "next/app";
-import Head from "next/head";
+import "../styles/globals.css"
+import type { AppProps } from "next/app"
+import Head from "next/head"
+import { NextComponentType, NextPageContext } from "next"
+import Noop from "../components/Noop"
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({
+  Component,
+  pageProps,
+}: AppProps & {
+  Component: NextComponentType<NextPageContext, any, {}> & {
+    Layout?: React.FC<{ pageProps: any }>
+  }
+}) {
+  const Layout = Component.Layout || Noop
+
   return (
-    <>
+    <Layout {...pageProps}>
       <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://api.fontshare.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
-          rel="stylesheet"
-        />
+        <title>Nikhil Singh — Product Designer</title>
       </Head>
       <Component {...pageProps} />
-    </>
-  );
+    </Layout>
+  )
 }
 
-export default MyApp;
+export default MyApp
