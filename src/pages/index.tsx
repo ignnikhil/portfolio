@@ -155,7 +155,7 @@ const HomePage: ExtendedNextPage = () => {
                 Explore Case Studies
               </h4>
               <div className="grid grid-cols-2 gap-20 mt-8">
-                <div>
+                <div className="relative">
                   <Image
                     src={habitAppImage}
                     alt="Habit Building App"
@@ -171,6 +171,11 @@ const HomePage: ExtendedNextPage = () => {
                       existing products.
                     </p>
                   </div>
+                  <NextLink href="/case-studies/habit">
+                    <a className="absolute inset-0">
+                      <span className="sr-only">Habit Building App</span>
+                    </a>
+                  </NextLink>
                 </div>
                 <div className="relative">
                   <Image
