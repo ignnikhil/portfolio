@@ -238,6 +238,19 @@ const HomePage: ExtendedNextPage = () => {
           </div>
         </div>
       </main>
+
+      <section className="px-5">
+        <div className="max-w-6xl mx-auto">
+          <p className="font-medium leading-tight text-7xl">
+            Ok <span className="text-[#8567FC] font-semibold">you</span> are
+            here
+            <br />
+            Then why not say
+            <br />
+            <span className="font-semibold text-[#14D87A]">hellooooo 👋</span>
+          </p>
+        </div>
+      </section>
     </>
   )
 }

@@ -1,13 +1,6 @@
 const Footer = () => (
   <footer className="px-5 pt-12 pb-80">
     <div className="max-w-6xl mx-auto">
-      <p className="font-medium leading-tight text-7xl">
-        Ok <span className="text-[#8567FC] font-semibold">you</span> are here
-        <br />
-        Then why not say
-        <br />
-        <span className="font-semibold text-[#14D87A]">hellooooo 👋</span>
-      </p>
       <nav className="flex items-center justify-between mt-24 font-medium">
         <a
           href="https://dribbble.com/nikhil15697"

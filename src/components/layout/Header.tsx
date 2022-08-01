@@ -29,7 +29,6 @@ const Header: React.FC = () => {
         <nav className="flex gap-8">
           <Link href="/">Work</Link>
           <Link href="/resume">Resume</Link>
-          <Link href="/about">About</Link>
         </nav>
       </div>
     </header>

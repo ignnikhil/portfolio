@@ -8,6 +8,13 @@ import nowandmeTherapyCaseStudyImage from "../../images/nowandme-x-therapy/nowan
 import homeScreenImage from "../../images/nowandme-x-therapy/home-screen.png"
 import navigationImage from "../../images/nowandme-x-therapy/navigation.png"
 import therapistDetailsImage from "../../images/nowandme-x-therapy/therapist-details.png"
+import paymentDetailsImage from "../../images/nowandme-x-therapy/payment.png"
+
+import bookingDetailsImage from "../../images/nowandme-x-therapy/booking-details.png"
+import bookingConfirmationImage from "../../images/nowandme-x-therapy/booking-confirmation.png"
+
+import searchImage from "../../images/nowandme-x-therapy/search.png"
+import filterImage from "../../images/nowandme-x-therapy/filter.png"
 
 const HomePage: ExtendedNextPage = () => {
   return (
@@ -122,7 +129,97 @@ const HomePage: ExtendedNextPage = () => {
             </div>
           </div>
         </section>
+        <section className="px-5 py-8">
+          <div className="flex max-w-6xl gap-10 mx-auto font-display">
+            <div className="bg-[#141413] text-center px-20">
+              <Image
+                src={bookingDetailsImage}
+                alt="Design of App Home Screen"
+              />
+              <div className="py-20">
+                <h5 className="text-xl font-bold">Booking Details</h5>
+                <p className="text-[#C2C2C2] mt-3 leading-loose">
+                  This screen is about the booking details like the date and
+                  time of therapy. User can book the session for the upcoming
+                  two days.
+                </p>
+              </div>
+            </div>
+            <div className="bg-[#141413] flex flex-col-reverse text-center px-20">
+              <Image
+                src={bookingConfirmationImage}
+                alt="Navigation Design of App"
+              />
+              <div className="py-20">
+                <h5 className="text-xl font-bold">Booking Confirmation</h5>
+                <p className="text-[#C2C2C2] mt-3 leading-loose">
+                  Here we show a confirmation screen before making the final
+                  payment to reduce the wrong selection of date and time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="px-5 py-8">
+          <div className="max-w-6xl mx-auto font-display">
+            <Image src={paymentDetailsImage} alt="" />
+            <div className="mt-5">
+              <h5 className="text-xl font-bold">Payment & Final Booking</h5>
+              <p className="text-[#C2C2C2] mt-3 leading-loose">
+                Booking a session starts when the user clicks on “Book Now”
+                which shows them an ‘add to cart’ sort of page and has a summary
+                of their booking. On this page there is a CTA of “Confirm and
+                Pay” to go to the payment screen. After payment is done there
+                comes up a screen to show current bookings and so that the user
+                can add them to their calendar.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="px-5 py-8">
+          <div className="flex max-w-6xl gap-10 mx-auto font-display">
+            <div className="bg-[#141413] flex flex-col-reverse  text-center px-20">
+              <Image src={searchImage} alt="Design of App Home Screen" />
+              <div className="py-20">
+                <h5 className="text-xl font-bold">Search</h5>
+                <p className="text-[#C2C2C2] mt-3 leading-loose">
+                  User can search the therapist by different way like through
+                  their name, specialties and the name of the problem they’re
+                  facing.
+                </p>
+              </div>
+            </div>
+            <div className="bg-[#141413] text-center px-20">
+              <Image src={filterImage} alt="Navigation Design of App" />
+              <div className="py-20">
+                <h5 className="text-xl font-bold">Filter</h5>
+                <p className="text-[#C2C2C2] mt-3 leading-loose">
+                  A user who wants to book the session can filter them according
+                  to the language, availability of slot and pricing. This
+                  filtering leads to a segmented group of therapists key to the
+                  user’s needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
+
+      <section className="px-5 pt-20">
+        <div className="flex flex-col items-center max-w-6xl mx-auto">
+          <span className="inline-block bg-[#FFEACB] text-[#FF9700] font-medium text-lg px-6 py-2.5 rounded-full">
+            Work in Progress
+          </span>
+          <h4 className="mt-5 text-5xl font-bold">
+            And… That’s a <span className="text-[#14D87A]">wraaaap!</span>
+          </h4>
+          <p className="text-[#C2C2C2] mt-3 leading-loose font-display max-w-2xl mx-auto text-center">
+            hope you found it useful and informative. Feel free to hit me up on
+            any social media platform if you have any questions. I would be more
+            than happy to have a chat with you.
+          </p>
+        </div>
+      </section>
     </>
   )
 }
