@@ -18,6 +18,8 @@ function MyApp({
     <Layout {...pageProps}>
       <Head>
         <title>Nikhil Singh — Product Designer</title>
+        <meta property="og:title" content="Nikhil Singh — Product Designer" />
+        <meta property="og:image" content="/img/og-image.png" />
       </Head>
       <Component {...pageProps} />
     </Layout>

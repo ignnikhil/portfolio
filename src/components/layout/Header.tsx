@@ -28,7 +28,7 @@ const Header: React.FC = () => {
         </Link>
         <nav className="flex gap-8">
           <Link href="/">Work</Link>
-          <Link href="/resume">Resume</Link>
+          <Link href="/Nikhil's Resume.pdf">Resume</Link>
         </nav>
       </div>
     </header>
