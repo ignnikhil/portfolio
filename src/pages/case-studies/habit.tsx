@@ -94,21 +94,12 @@ const HomePage: ExtendedNextPage = () => {
               <Image src={activeHabitImage} alt="Design of App Home Screen" />
               <div className="py-20">
                 <h5 className="text-xl font-bold">Data Of Active Habit</h5>
-                <p className="text-[#C2C2C2] mt-3 leading-loose">
-                  This screen is about the booking details like the date and
-                  time of therapy. User can book the session for the upcoming
-                  two days.
-                </p>
               </div>
             </div>
             <div className="bg-[#141413] flex flex-col-reverse text-center px-20">
               <Image src={insightImage} alt="Navigation Design of App" />
               <div className="py-20">
                 <h5 className="text-xl font-bold">Complete Insights</h5>
-                <p className="text-[#C2C2C2] mt-3 leading-loose">
-                  Here we show a confirmation screen before making the final
-                  payment to reduce the wrong selection of date and time.
-                </p>
               </div>
             </div>
           </div>
