@@ -41,7 +41,7 @@ const HomePage: ExtendedNextPage = () => {
                   products.
                 </p>
               </div>
-              <div className="flex-shrink-0 w-1/2">
+              <div className="relative flex-shrink-0 w-1/2 xl:-right-20">
                 <Image
                   width={2260}
                   src={nowandmeTherapyCaseStudyImage}

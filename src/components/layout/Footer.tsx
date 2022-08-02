@@ -1,5 +1,5 @@
 const Footer = () => (
-  <footer className="px-5 pt-12 pb-80">
+  <footer className="px-5 pt-12 pb-44">
     <div className="max-w-6xl mx-auto">
       <nav className="flex items-center justify-between mt-24 font-medium">
         <a
@@ -17,6 +17,13 @@ const Footer = () => (
           Behance
         </a>
         <a
+          href="https://www.linkedin.com/in/nikhilsingh15697/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a
           href="https://www.instagram.com/nikkkhil__singh/"
           target="_blank"
           rel="noreferrer"
@@ -31,13 +38,10 @@ const Footer = () => (
           Twitter
         </a>
         <a
-          href="https://www.linkedin.com/in/nikhilsingh15697/"
+          href="mailto:nikhilniks884@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
-          LinkedIn
-        </a>
-        <a href="mailto:" target="_blank" rel="noreferrer">
           Email
         </a>
       </nav>
