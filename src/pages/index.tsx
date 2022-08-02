@@ -157,6 +157,26 @@ const HomePage: ExtendedNextPage = () => {
               <div className="grid grid-cols-2 gap-20 mt-8">
                 <div className="relative">
                   <Image
+                    src={nowandmeTherapyAppImage}
+                    alt="Now&Me x Therapy"
+                    layout="responsive"
+                  />
+                  <div className="mt-8 font-display">
+                    <h5 className="text-xl font-semibold">Now&Me x Therapy</h5>
+                    <p className="mt-4 text-lg leading-8 text-[#818180]">
+                      We helped Sparkasse to enter a new era of online and
+                      mobile banking, expanded their app portfolio and improved
+                      existing products.
+                    </p>
+                  </div>
+                  <NextLink href="/case-studies/nowandme-x-therapy">
+                    <a className="absolute inset-0">
+                      <span className="sr-only">Now&Me x Therapy</span>
+                    </a>
+                  </NextLink>
+                </div>
+                <div className="relative">
+                  <Image
                     src={habitAppImage}
                     alt="Habit Building App"
                     layout="responsive"
@@ -174,26 +194,6 @@ const HomePage: ExtendedNextPage = () => {
                   <NextLink href="/case-studies/habit">
                     <a className="absolute inset-0">
                       <span className="sr-only">Habit Building App</span>
-                    </a>
-                  </NextLink>
-                </div>
-                <div className="relative">
-                  <Image
-                    src={nowandmeTherapyAppImage}
-                    alt="Now&Me x Therapy"
-                    layout="responsive"
-                  />
-                  <div className="mt-8 font-display">
-                    <h5 className="text-xl font-semibold">Now&Me x Therapy</h5>
-                    <p className="mt-4 text-lg leading-8 text-[#818180]">
-                      We helped Sparkasse to enter a new era of online and
-                      mobile banking, expanded their app portfolio and improved
-                      existing products.
-                    </p>
-                  </div>
-                  <NextLink href="/case-studies/nowandme-x-therapy">
-                    <a className="absolute inset-0">
-                      <span className="sr-only">Now&Me x Therapy</span>
                     </a>
                   </NextLink>
                 </div>
