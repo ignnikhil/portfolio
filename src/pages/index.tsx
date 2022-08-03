@@ -164,9 +164,8 @@ const HomePage: ExtendedNextPage = () => {
                   <div className="mt-8 font-display">
                     <h5 className="text-xl font-semibold">Now&Me x Therapy</h5>
                     <p className="mt-4 text-lg leading-8 text-[#818180]">
-                      We helped Sparkasse to enter a new era of online and
-                      mobile banking, expanded their app portfolio and improved
-                      existing products.
+                      Connect with a verified mental health professional and
+                      book therapy seassion at your convenience!
                     </p>
                   </div>
                   <NextLink href="/case-studies/nowandme-x-therapy">
@@ -186,9 +185,7 @@ const HomePage: ExtendedNextPage = () => {
                       Habit Building App
                     </h5>
                     <p className="mt-4 text-lg leading-8 text-[#818180]">
-                      We helped Sparkasse to enter a new era of online and
-                      mobile banking, expanded their app portfolio and improved
-                      existing products.
+                      Build better habits and track your progress with ease
                     </p>
                   </div>
                   <NextLink href="/case-studies/habit">
@@ -197,17 +194,23 @@ const HomePage: ExtendedNextPage = () => {
                     </a>
                   </NextLink>
                 </div>
-                <div className="col-span-2">
-                  <div className="bg-[#1818189C] h-96">{/* placeholder */}</div>
-                  <div className="grid grid-cols-2 gap-20 mt-4 font-display">
-                    <h5 className="text-xl font-semibold">Now&amp;Me x Quiz</h5>
-                    <p className="text-lg leading-8 text-[#818180]">
-                      We helped Sparkasse to enter a new era of online and
-                      mobile banking, expanded their app portfolio and improved
-                      existing products.
-                    </p>
+                {false && (
+                  <div className="col-span-2">
+                    <div className="bg-[#1818189C] h-96">
+                      {/* placeholder */}
+                    </div>
+                    <div className="grid grid-cols-2 gap-20 mt-4 font-display">
+                      <h5 className="text-xl font-semibold">
+                        Now&amp;Me x Quiz
+                      </h5>
+                      <p className="text-lg leading-8 text-[#818180]">
+                        We helped Sparkasse to enter a new era of online and
+                        mobile banking, expanded their app portfolio and
+                        improved existing products.
+                      </p>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           </div>

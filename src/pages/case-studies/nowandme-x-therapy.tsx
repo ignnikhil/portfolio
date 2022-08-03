@@ -36,9 +36,8 @@ const HomePage: ExtendedNextPage = () => {
                   Now&amp;Me x Therapy
                 </h1>
                 <p className="max-w-md mt-6 text-lg font-medium text-[#797978]">
-                  We helped Sparkasse to enter a new era of online and mobile
-                  banking, expanded their app portfolio and improved existing
-                  products.
+                  Connect with a verified mental health professional and book
+                  therapy seassion at your convenience!
                 </p>
               </div>
               <div className="relative flex-shrink-0 w-1/2 xl:-right-20">

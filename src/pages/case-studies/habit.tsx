@@ -32,9 +32,7 @@ const HomePage: ExtendedNextPage = () => {
                   Habit – Track Daily Goals
                 </h1>
                 <p className="max-w-md mt-6 text-lg font-medium text-[#797978]">
-                  We helped Sparkasse to enter a new era of online and mobile
-                  banking, expanded their app portfolio and improved existing
-                  products.
+                  Build better habits and track your progress with ease
                 </p>
               </div>
               <div className="relative flex-shrink-0 w-1/2 xl:-right-20">

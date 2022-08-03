@@ -24,6 +24,9 @@ const Header: React.FC = () => {
             }}
           >
             Nikhil Singh.
+            <span className="px-2 py-1 ml-3 text-xs font-medium tracking-wide text-white uppercase rounded-full bg-gradient-to-br from-amber-500 to-purple-500">
+              wip
+            </span>
           </span>
         </Link>
         <nav className="flex gap-8">
