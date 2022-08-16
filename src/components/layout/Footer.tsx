@@ -3,7 +3,7 @@ const Footer = () => (
     <div className="max-w-6xl mx-auto">
       <nav className="flex items-center justify-between mt-24 font-medium">
         <a
-          href="https://dribbble.com/nikhil15697"
+          href="https://dribbble.com/nikhildesignnnn"
           target="_blank"
           rel="noreferrer"
         >
@@ -31,14 +31,14 @@ const Footer = () => (
           Instagram
         </a>
         <a
-          href="https://twitter.com/Nikhil_niks_ss"
+          href="https://twitter.com/helloooo_nikhil"
           target="_blank"
           rel="noreferrer"
         >
           Twitter
         </a>
         <a
-          href="mailto:nikhilniks884@gmail.com"
+          href="mailto:hellooooo.nikhil@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
